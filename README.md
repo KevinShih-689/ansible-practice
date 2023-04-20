@@ -1,5 +1,5 @@
 # ansible-practice
-###### To practice how to write ansible playbook.
+###### 🚀 To practice how to write ansible playbook.
 ## Project Architechture
 ```
 ansible-practice/
