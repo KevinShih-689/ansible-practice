@@ -1,0 +1,2 @@
+- name: ======PING AND TEST ROLE======
+  include_tasks: test_task.yml
