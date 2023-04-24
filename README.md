@@ -61,3 +61,5 @@ ansible-practice/
 ## Reference
 * ###### [Study Notes](https://hackmd.io/@KevinShihYC/ryafhGqYv)
 * ###### [Ansible Doc](https://docs.ansible.com/ansible/latest/index.html)
+
+![Alt](https://repobeats.axiom.co/api/embed/4a0d48eb8f795a92130598c7ebef46a7ad237871.svg "Repobeats analytics image")
