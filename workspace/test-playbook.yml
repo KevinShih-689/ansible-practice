@@ -1,0 +1,11 @@
+---
+- hosts: DynasafeVM
+  tasks:
+    - name: ======TEST CONNECTION======
+      ping:
+      register: message
+    - name: ======PRINT DEBUG MESSAGE======
+      debug:
+        msg: "AAAAAA"
+  roles:
+    - {role: '../roles/ping', become: true}

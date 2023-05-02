@@ -1,6 +1,6 @@
 # ansible-practice
 ###### 🚀 To practice how to write ansible playbook.
-## Project Architechture
+## Directory Layout
 ```
 ansible-practice/
 ├── inventories/
@@ -15,6 +15,7 @@ ansible-practice/
 │   │   ├── tasks/
 │   │   ├── handlers/
 │   │   ├── files/
+│   │   ├── defaults/
 │   │   ├── templates/
 │   │   └── vars/
 │   │       ├── main.yml
@@ -59,7 +60,9 @@ ansible-practice/
     ```
 
 ## Reference
+* ###### [Ansible Best Practices](https://github.com/ansible/ansible-examples)
 * ###### [Study Notes](https://hackmd.io/@KevinShihYC/ryafhGqYv)
+* ###### [Ansible Best Practice](https://docs.ansible.com/ansible/latest/tips_tricks/ansible_tips_tricks.html)
 * ###### [Ansible Doc](https://docs.ansible.com/ansible/latest/index.html)
 
 ![Alt](https://repobeats.axiom.co/api/embed/4a0d48eb8f795a92130598c7ebef46a7ad237871.svg "Repobeats analytics image")

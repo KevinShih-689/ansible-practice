@@ -8,4 +8,4 @@
       debug:
         msg: "AAAAAA"
   roles:
-    - role: '../roles/ping'
+    - role: '../roles/pip-installer'
