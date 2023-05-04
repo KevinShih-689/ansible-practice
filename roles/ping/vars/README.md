@@ -1,6 +1,6 @@
 # Vars
 * ###### 用來放置變數
-* ###### 優先度高於 ` /vars/main.yml `
+* ###### 優先度高於 ` /defaults/main.yml `
 * ###### Ansible 預設讀取此目錄下的 ` main.yml `
 
 ##### 優先級 ( 高 到 低 )
