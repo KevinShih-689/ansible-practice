@@ -8,4 +8,4 @@
       debug:
         msg: "AAAAAA"
   roles:
-    - {role: '../roles/ping', become: true}
+    - {role: '../roles/ping-sample', become: true}
