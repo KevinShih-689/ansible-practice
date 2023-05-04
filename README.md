@@ -59,6 +59,13 @@ ansible-practice/
     $ vi ./.ssh/authorized_keys
     ```
 
+### Virtual Machine
+* ##### Control Node
+    
+* ##### Managed Node
+    * ###### RHEL 8
+    * ###### IP: 10.250.75.112
+
 ## Reference
 * ###### [Ansible Best Practices](https://github.com/ansible/ansible-examples)
 * ###### [Study Notes](https://hackmd.io/@KevinShihYC/ryafhGqYv)
