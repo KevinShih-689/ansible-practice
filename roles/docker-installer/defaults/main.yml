@@ -1,0 +1,3 @@
+---
+DOCKER_REPO_URL: https://download.docker.com/linux/centos/docker-ce.repo
+DOCKER_REPO_PATH: /etc/yum.repos.d/docker-ce.repo

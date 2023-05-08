@@ -1,5 +1,5 @@
 ---
-- hosts: DynasafeVM
+- hosts: DynasafeRockyLinux
   tasks:
     - name: ======TEST CONNECTION======
       ping:
@@ -8,4 +8,4 @@
       debug:
         msg: "AAAAAA"
   roles:
-    - role: '../roles/pip-installer'
+    - role: '../roles/docker-installer'

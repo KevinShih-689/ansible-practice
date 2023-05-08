@@ -1,0 +1,28 @@
+---
+ - name: "======INSTALL YUM UTILS TOOL======"
+   become: true
+   yum:
+      name: yum-utils
+      state: present
+      update_cache: yes
+
+ - name: "======ADD DOCKER REPOSITORY======"
+   command: yum-config-manager --add-repo {{ DOCKER_REPO_URL }}
+
+ - name: "======CALL DOCKER INSTALLER======"
+   block:
+    - include: installer.yml
+   rescue:
+     - name: "======EDIT DOCKER REPO FILE WHEN INSTALL FAIL======"
+       become: true
+       lineinfile:
+        path: "{{ DOCKER_REPO_PATH }}"
+        firstmatch: yes
+        insertafter: "gpgkey=https://download.docker.com/linux/rhel/gpg"
+        line: "sslverify=0"
+     - name: "======RE RUN DOCKER INSTALLER======"
+       become: true
+       include: installer.yml
+
+
+  

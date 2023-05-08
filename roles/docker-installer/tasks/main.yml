@@ -1,0 +1,16 @@
+---
+  - name: "======CHECK IF DOCKER IS INSTALLED ======"
+    become: true
+    command: docker -v
+    ignore_errors: true
+    changed_when: true
+    register: docker_is_installed
+  
+  - name: "======INSTALL DOCKER ======"
+    become: true
+    include: install-docker.yml
+    when: docker_is_installed.rc != 0
+  
+  - name: "======START DOCKER======"
+    become: true
+    command: systemctl start docker

@@ -1,3 +1,6 @@
 [DynasafeVM]
 RHCSAPrac ansible_user=root
 
+[DynasafeRockyLinux]
+RockyLinux ansible_user=root
+

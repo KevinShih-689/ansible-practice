@@ -1,7 +1,7 @@
 ---
  - name: "======CHECK IF PIP IS INSTALLED OR NOT================"
    become: true
-   command: pip --version
+   command: pip3 --version
    ignore_errors: true
    changed_when: false
    register: pip_is_installed
