@@ -76,9 +76,9 @@ install-docker-playbook | Install Docker | docker-installer</br>pip-installer
 * ##### [Jinja](https://marketplace.visualstudio.com/items?itemName=wholroyd.jinja)
 * ##### [SFTP](https://marketplace.visualstudio.com/items?itemName=Natizyskunk.sftp) ( OPTIONAL )
 ## Reference
-* ###### [Ansible Best Practices](https://github.com/ansible/ansible-examples)
+* ###### [Ansible Best Practices sample project](https://github.com/ansible/ansible-examples)
 * ###### [Study Notes](https://hackmd.io/@KevinShihYC/ryafhGqYv)
-* ###### [Ansible Best Practice](https://docs.ansible.com/ansible/latest/tips_tricks/ansible_tips_tricks.html)
+* ###### [Ansible Best Practice Doc](https://docs.ansible.com/ansible/latest/tips_tricks/ansible_tips_tricks.html)
 * ###### [Ansible Doc](https://docs.ansible.com/ansible/latest/index.html)
 * ###### [Sample Project](https://github.com/tsoliangwu0130/my-ansible/blob/master/docker-jenkins.yml)
 * ###### [Sample Introduction](https://tso-liang-wu.gitbook.io/learn-ansible-and-jenkins-in-30-days/ansible/ansible)
