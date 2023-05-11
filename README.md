@@ -24,14 +24,12 @@ ansible-practice/
 │       ├── tasks/
 │       ├── files/
 │       └── templates/
-├── workspace/
-│   ├── deploy-webserver.yml
-│   └── provision-infrastructure.yml
-├── site.yml
+├── site.yml ( Master Playbook )
+├── deploy-webserver.yml
+├── provision-infrastructure.yml
 ├── production.yml
 ├── staging.yml
-├── ansible.cfg
-└── requirements.yml
+└── ansible.cfg
 ```
 ## Before you start
 ##### ⚡ Remember to share your controller ssh public key `id_rsa.pub` with the worker node you want to control.

@@ -1,5 +1,6 @@
 ---
-- hosts: DynasafeVM
+- name: ======TEST PLAYBOOK======
+  hosts: DynasafeVM
   tasks:
     - name: ======TEST CONNECTION======
       ping:
