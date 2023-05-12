@@ -2,14 +2,14 @@
 - name: ======TEST PLAYBOOK======
   hosts: DynasafeVM
   tasks:
-    - name: ======TEST CONNECTION======
-      ping:
+    - name: TEST CONNECTION
+      ansible.builtin.ping:
       register: message
-    - name: ======PRINT DEBUG MESSAGE======
-      debug:
+    - name: PRINT DEBUG MESSAGE
+      ansible.builtin.debug:
         msg: "AAAAAA"
-    - name: ======PRINT VARIABLES======
-      debug:
+    - name: PRINT VARIABLES
+      ansible.builtin.debug:
         msg: "{{ TEST_ECHO_MSG }}{{ TEST_HOST_VARIABLES }}"
   roles:
-    - {role: '../roles/ping-sample', become: true}
+    - {role: ping-sample, become: true}

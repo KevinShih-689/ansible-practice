@@ -4,10 +4,9 @@
 * ###### Ansible 預設讀取此目錄下的 ` main.yml `
 
 ##### 優先級 ( 高 到 低 )
-1. ###### Extra vars：使用 "-e" 參數在命令行中定義的變量，具有最高優先級。
-2. ###### vars files：導入到playbook的變數，優先級高於 playbook 中定義的變量。( 後導入會覆蓋前導入 )
-    * ###### `/vars/main.yml` 定義的變數大於 `/defaults/main.yml`
-3. ###### Play vars：定義在 playbook 中的變量，優先級高於全局變量。
+1. ###### 使用 "-e" 參數在命令行中定義的變量
+2. ###### role or playbook 會抓取 vars and defaults
+3. ###### playbook 會抓取 playbook裡面定義的 var 
     ###### 定義在 Playbook，如下:
     ```
     - name: My Playbook
@@ -20,9 +19,7 @@
             debug:
             var: my_var_1
     ```
-4. ###### Host vars：定義在 Inventory 中的變量，優先級高於全局變量。
-5. ###### Group vars：定義在 Inventory 中的變量，優先級高於全局變量。
-6. ###### Global vars：定義在 Ansible 配置文件中的全局變量，優先級最低。
-
+4. ###### 執行playbook的 hosts 裡面的 group_vars and host_vars
+5. ###### 配置文件中的 Global vars
 
 ###### [Ansible Doc to introduction var](https://docs.ansible.com/ansible/latest/playbook_guide/playbooks_variables.html#variable-precedence-where-should-i-put-a-variable)
