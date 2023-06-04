@@ -5,7 +5,7 @@
 
 ##### 優先級 ( 高 到 低 )
 1. ###### 使用 "-e" 參數在命令行中定義的變量
-2. ###### role or playbook 會抓取 vars and defaults
+2. ###### role 會抓取 vars and defaults || playbook 可以 import var_files
 3. ###### playbook 會抓取 playbook裡面定義的 var 
     ###### 定義在 Playbook，如下:
     ```
